@@ -46,7 +46,7 @@ let config = {
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin(htmlConfig),
     new HtmlWebpackInlineSourcePlugin(),
-    new CopyWebpackPlugin([{ from: 'src/lib/*' }])
+    new CopyWebpackPlugin([{ from: 'src/vendor/*' }])
   ],
   stats: 'minimal',
   devServer: {
